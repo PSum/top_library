@@ -33,5 +33,4 @@ const myLibrary = [];
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, false);
 addBookToLibrary("fifty shades", "some dude", 200,true);
 
-console.log(myLibrary);
 
