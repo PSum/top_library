@@ -9,12 +9,18 @@ body{
     /* overflow:hidden; */
 }
 
+.book p,
+.book h3 {
+    text-align: center;
+}
+
 .leftBar {
     background-color: antiquewhite;
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 10px;
 }
 
 .bookSpace {
@@ -35,3 +41,9 @@ body{
     margin: 10px;
 }
 
+#addBook,
+#bookButton {
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+}
