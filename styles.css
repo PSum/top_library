@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 body{
@@ -14,6 +15,7 @@ body{
     text-align: center;
 }
 
+
 .leftBar {
     background-color: antiquewhite;
     flex: 1;
@@ -21,14 +23,15 @@ body{
     flex-direction: column;
     gap: 20px;
     padding: 10px;
+    box-shadow: 0 0 5px gray;
 }
 
 .bookSpace {
     flex: 5;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fit, minmax(33.3333vh,1fr));
-    grid-auto-rows: minmax(33.3333vh,1fr); /* it tries the minimum space possible (33vh) - which means a minimum of 3 items. Then it enlarges the boxes so there is no leftover space -> 1fr */
+    grid-template-rows: repeat(auto-fit, minmax(calc(100vh/3),1fr));
+    grid-auto-rows: minmax(calc(100vh/3) ,1fr); /* it tries the minimum space possible (33vh) - which means a minimum of 3 items. Then it enlarges the boxes so there is no leftover space -> 1fr */
     overflow-y: auto;
 }
 
@@ -46,4 +49,16 @@ body{
     background-color: white;
     padding: 5px;
     border-radius: 8px;
+}
+
+#addBook {
+    box-shadow: 3px 3px 10px gray;
+}
+
+.deleteButton {
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
 }
