@@ -14,15 +14,24 @@ function createBook (title, author, pages, read) {
     }
 }
 
-function addBookToLibrary () {
-
+function addBookToLibrary (title, author, pages, read) {
+    let newBook = new createBook(title, author, pages, read);
+    myLibrary.push(newBook);
 }
 
+// let book = document.createElement('div');
+// book.className = 'book';
+
+
+// container.appendChild(book);
 
 const container = document.querySelector(".bookSpace");
+const myLibrary = [];
 
 
 
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, false);
+addBookToLibrary("fifty shades", "some dude", 200,true);
 
-// book1 = new createBook("The Hobbit", "J.R.R. Tolkien", 295, false);
+console.log(myLibrary);
 
